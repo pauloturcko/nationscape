@@ -10,6 +10,8 @@ const GlobalStyles = createGlobalStyle`
     body {
         font-family: ${({ theme }) => theme.fonts.body};
         background-color: ${({ theme }) => theme.colors.background};
+        display: flex;
+        height: 100vh;
     }
 
     ::-webkit-scrollbar {
