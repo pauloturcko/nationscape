@@ -4,7 +4,7 @@ import { SidebarFooterIcons } from "../atoms/SidebarFooterIcons";
 export const SidebarFooter = () => {
   return (
     <StyledFooterGroupElements>
-      <StyledDevName>Desenvolvido por Paulo Turco</StyledDevName>
+      <StyledDevName>Developed By Paulo Turco</StyledDevName>
       <SidebarFooterIcons />
     </StyledFooterGroupElements>
   );

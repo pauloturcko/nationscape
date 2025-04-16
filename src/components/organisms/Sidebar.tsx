@@ -1,11 +1,15 @@
 import styled from "styled-components";
 import { SidebarHeader } from "../atoms/SidebarHeader";
 import { SidebarFooter } from "../molecules/SidebarFooter";
+import { FilterDataInput } from "../atoms/FilterDataInput";
+import { FilterDataSelect } from "../atoms/FilterDataSelect";
 
 export const Sidebar = () => {
   return (
     <StyledSidebar>
       <SidebarHeader />
+      <FilterDataInput placeholder="Country" />
+      <FilterDataSelect />
       <SidebarFooter />
     </StyledSidebar>
   );

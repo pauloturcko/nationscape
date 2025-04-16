@@ -7,6 +7,11 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    input {
+      all: unset;
+      box-sizing: border-box;
+    }
+
     body {
         font-family: ${({ theme }) => theme.fonts.body};
         background-color: ${({ theme }) => theme.colors.background};
