@@ -1,7 +1,11 @@
 import { API } from "./API";
 
-export const getByRegion = async () => {
-  const response = await API.get("region/europe");
+type RegionEndpointProps = {
+  region: string;
+};
+
+export const getByRegion = async ({ region }: RegionEndpointProps) => {
+  const response = await API.get(`region/${region}`);
   console.log(response);
   return response;
 };

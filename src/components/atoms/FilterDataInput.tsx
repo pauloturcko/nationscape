@@ -2,10 +2,14 @@ import styled from "styled-components";
 
 type FilterDataInputProps = {
   placeholder: string;
+  type: string;
 };
 
-export const FilterDataInput = ({ placeholder }: FilterDataInputProps) => {
-  return <StyledInput placeholder={placeholder} />;
+export const FilterDataInput = ({
+  placeholder,
+  type,
+}: FilterDataInputProps) => {
+  return <StyledInput type={type} placeholder={placeholder} />;
 };
 
 const StyledInput = styled.input`
