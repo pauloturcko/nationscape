@@ -1,6 +1,10 @@
 import { API } from "./API";
 
-export const getByName = async () => {
-  const response = await API.get("name/brazil");
+type NameEndpointProps = {
+  name: string;
+};
+
+export const getByName = async ({ name }: NameEndpointProps) => {
+  const response = await API.get(`name/${name}`);
   return response;
 };
